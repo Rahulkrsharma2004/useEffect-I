@@ -1,8 +1,8 @@
 const PostItem = ({ id, title }) => {
     return (
       <div>
-        <p>{id}</p>
-        <p>{title}</p>
+        <p>{id}.  {title}</p>
+        
       </div>
     )
   }

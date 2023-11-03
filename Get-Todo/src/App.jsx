@@ -56,6 +56,9 @@ function App() {
 
   return (
     <>
+    {posts.map((post) => (
+        <PostItem key={post.id} id={post.id} title={post.title} />
+      ))}
       <div
         style={{
           display: "flex",
@@ -74,9 +77,6 @@ function App() {
           NEXT
         </button>
       </div>
-      {posts.map((post) => (
-        <PostItem key={post.id} id={post.id} title={post.title} />
-      ))}
     </>
   )
 }
